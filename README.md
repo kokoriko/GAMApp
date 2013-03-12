@@ -8,7 +8,8 @@ Eşref Öztürk <br />
 Zeynep Havva Dinç<br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
-Edanur Demir
+Edanur Demir<br />
+Ramazan Zor
 </p>
 
 ABOUT GAMApp
