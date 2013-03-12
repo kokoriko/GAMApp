@@ -1,13 +1,15 @@
 GAMApp
 ================
-<p>Project Manager: Metin Emenullahi<br />
-&nsbp; &nsbp; &nsbp; Developers: <br />
-			Mustafa Orkun Acar<br />
-            Eşref Öztürk <br />
-            Zeynep Havva Dinç<br />
-            Oğuzhan Ali Ünlü<br />
-            Mehmet Akalın<br />
-            Edanur Demir</p>
+<p><b><i>Project Manager:</i></b> Metin Emenullahi</p>
+<p>
+<b><i>Developers:</i></b> <br />
+Mustafa Orkun Acar<br />
+Eşref Öztürk <br />
+Zeynep Havva Dinç<br />
+Oğuzhan Ali Ünlü<br />
+Mehmet Akalın<br />
+Edanur Demir
+</p>
 
 ABOUT GAMApp
 ======================
