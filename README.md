@@ -19,8 +19,8 @@ ABOUT GAMApp
 3. Group creation<br />
 4. Group deletion<br />
 5. Adding emails to groups<br />
- &nsbp;&nsbp;&nsbp;&nsbp;   a. To all groups<br />
- &nsbp;&nsbp;&nsbp;&nsbp;   b. To specific groups<br />
+--->a. To all groups<br />
+--->b. To specific groups<br />
 6. Deleting emails from the groups <br />
-  &nsbp;&nsbp;&nsbp;&nsbp;  a. From all groups<br />
-   &nsbp;&nsbp;&nsbp;&nsbp; b. From specific groups</p>
+--->a. From all groups<br />
+--->b. From specific groups</p>
