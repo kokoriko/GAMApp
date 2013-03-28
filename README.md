@@ -4,7 +4,7 @@ GAMApp
 <p>
 <b><i>Developers:</i></b> <br />
 Mustafa Orkun Acar<br />
-Eşref Öztürk <br />
+<a href="https://github.com/esrefozturk">Eşref Öztürk</a><br />
 Zeynep Havva Dinç<br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
