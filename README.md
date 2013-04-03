@@ -3,8 +3,13 @@ GAMApp
 <p><b><i>Project Manager:</i></b> Metin Emenullahi</p>
 <p>
 <b><i>Developers:</i></b> <br />
+<<<<<<< HEAD
 Mustafa Orkun Acar<br />
 <a href="https://github.com/esrefozturk" target="_blank" >Eşref Öztürk</a><br />
+=======
+<a href="https://github.com/mustafaorkunacar" target="_blank" >Mustafa Orkun Acar<br />
+<a href="https://github.com/esrefozturk">Eşref Öztürk</a><br />
+>>>>>>> 2aaab09fff954a343958278f0bc7dcb71ed12996
 <a href="https://github.com/ZeynepHavva">Zeynep Havva Dinç</a><br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
