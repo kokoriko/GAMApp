@@ -8,7 +8,6 @@ GAMApp
 <a href="https://github.com/esrefozturk">Eşref Öztürk</a><br />
 <a href="https://github.com/ZeynepHavva"target="_black">Zeynep Havva Dinç</a><br />
 <a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
-<a href="https://github.com/ZeynepHavva">Zeynep Havva Dinç</a><br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
 Edanur Demir<br />
