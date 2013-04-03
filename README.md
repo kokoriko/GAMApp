@@ -1,6 +1,6 @@
 GAMApp
 ================
-<p><b><i>Project Manager:</i></b> Metin Emenullahi</p>
+<p><b><i>Project Manager:</i></b> <a href="https://github.com/mtndesign" target="_blank">Metin Emenullahi</a></p>
 <p>
 <b><i>Developers:</i></b> <br />
 <a href="https://github.com/mustafaorkunacar" target="_blank" >Mustafa Orkun Acar<br />
