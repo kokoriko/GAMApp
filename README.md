@@ -9,7 +9,6 @@ GAMApp
 <a href="https://github.com/ZeynepHavva">Zeynep Havva Dinç</a><br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
-Edanur Demir<br />
 Ramazan Zor
 </p>
 
