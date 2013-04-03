@@ -8,7 +8,6 @@ GAMApp
 <a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
-Edanur Demir<br />
 Ramazan Zor
 </p>
 
