@@ -3,12 +3,11 @@ GAMApp
 <p><b><i>Project Manager:</i></b> Metin Emenullahi</p>
 <p>
 <b><i>Developers:</i></b> <br />
-Mustafa Orkun Acar<br />
-Eşref Öztürk <br />
-Zeynep Havva Dinç<br />
+<a href="https://github.com/mustafaorkunacar" target="_blank" >Mustafa Orkun Acar<br />
+<a href="https://github.com/ZeynepHavva"target="_black">Zeynep Havva Dinç</a><br />
+<a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
 Oğuzhan Ali Ünlü<br />
 Mehmet Akalın<br />
-Edanur Demir<br />
 Ramazan Zor
 </p>
 
