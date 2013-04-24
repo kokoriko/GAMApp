@@ -41,8 +41,7 @@ class GABase(object):
             self.gservice.ProgrammaticLogin()
         except BadAuthentication:
             raise AuthenticationError("Login",
-                                      "Login Failed - 
-                                      Incorrect username or password")
+                                      "Login Failed - Incorrect username or password")
         
         return self.gservice
 
