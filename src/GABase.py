@@ -4,7 +4,7 @@ Base package for everything. This is a bridge between GAMApp and GData.
 import gdata.apps.groups.service as gdataserv
 from gdata.service import BadAuthentication
 from ga_bases import *
-from ga_bases.GAExceptionBase import *
+from ga_bases.GAExceptionBase import AuthenticationError
 
 class GABase(object):
     """
@@ -20,6 +20,8 @@ class GABase(object):
         self.username = kwargs.get("username") # Username for authentication
         self.password = kwargs.get("password") # Password for authentication
         self.domain_name = kwargs.get("domain_name") # Domain Name for auth
+        self.group = kwargs.get("group") # For GASearchBase.search_group()
+        self.user = kwargs.get("user")   # For GASearchBase.search.user()
         # Holds all groups, that is came from get_all_groups()-more like a cache
         self.all_groups = kwargs.get("all_groups")         
         #TODO 
@@ -37,13 +39,19 @@ class GABase(object):
                                                 domain=self.domain_name, 
                                                 password=self.password)
         try:
-            # Try to login
+            # Try to login   
             self.gservice.ProgrammaticLogin()
         except BadAuthentication:
             raise AuthenticationError("Login",
                                       "Login Failed - Incorrect username or password")
         
         return self.gservice
+
+    def get_group(self, gservice):
+        """
+        Rerieves the group
+        """
+        return gservice.RetrieveGroup(self.group.group_id)
 
     def get_all_groups(self, gservice):
         """
@@ -54,4 +62,24 @@ class GABase(object):
         # as the object member to be used in future  - as a temporary cache 
         self.all_groups = gservice.RetrieveAllGroups()      
         return self.all_groups
+
+    def get_member_from_group(self, gservice, member, group):
+        """
+        Retrieve member from group
+        """
+        return gservice.RetrieveMember(member, group)
         
+    def check_is_member(self, gservice, member, group, groups_user_in=None):
+        """
+        Check to see if the member is already in the group
+        """
+        is_member = False
+        if gservice.IsMember(member, group):
+            is_member = True
+
+        if groups_user_in is None:
+            if is_member:   
+                groups_user_in.append(group)
+            else:
+                return is_member
+
