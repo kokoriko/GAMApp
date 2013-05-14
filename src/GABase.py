@@ -83,3 +83,13 @@ class GABase(object):
             else:
                 return is_member
 
+    def add_user_to_group(self,gservice,user,grp):
+	"""
+	Add user to a particular group
+	"""
+	try:
+		self.adding_result=gservice.AddMemberToGroup(user,grp)
+	except Exception:
+		print "Permission denied for adding",grp
+	return self.adding_result
+

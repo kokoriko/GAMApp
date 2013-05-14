@@ -92,9 +92,12 @@ class GACLIClient(cmd.Cmd):
     
     def do_addusertogroups(self, usr, grp=None):
         """
-        Add usr to grp. If no grp provided, it'll add the usr to all the groups
+        Add usr to grp. If no grp provided, adds user to all available groups
+		addusertogroups(usr[,grps])
         """
-        pass
+	ga_adding = GAUserMan(auth=self.authentication)
+	ga_adding.add(usr=usr,grps=grps)
+	return
     
     def do_deleteuserfromgroup(self, usr, grp=None):
         """
