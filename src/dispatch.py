@@ -48,13 +48,15 @@ class GACLIClient(cmd.Cmd):
         except URLValidationError, ex:
             #TODO - Log the details
             print "Domain Name not validated"
+	    return
         except EmailValidationError, ex:
             #TODO - Log the Details
+	    is_username_valid_email = False
             pass
             
         self.authentication.domain_name = domain_name
         self.authentication.password = password
-        if not is_username_valid_email: # If username is a valid email, use it as it is.
+        if is_username_valid_email: # If username is a valid email, use it as it is.
             self.authentication.username = username
         else: # if not, concatenate it with @ and the domain_name
             self.authentication.username = "%(username)s@%(domainname)s" % {'username': username,
