@@ -5,6 +5,7 @@ import traceback, sys, subprocess,sys, cmd, getpass, signal, argparse
 from ga_bases.GASearchBase import GASearch
 from ga_bases.GAAuthenticationBase import GAAuthentication
 from ga_bases.GAValidatorBase import GAValidator
+from ga_bases.GAUserManBase import GAUserMan
 from ga_bases.GAExceptionBase import URLValidationError, EmailValidationError
 from ga_bases.GAExceptionBase import AuthenticationError, UserNotFoundError
 from ga_bases.GAExceptionBase import MultipleKeyError
@@ -20,7 +21,7 @@ class GACLIClient(cmd.Cmd):
         For ex: holds authentication object to further use it in everywhere.
         """
         cmd.Cmd.__init__(self)
-        self.prompt = "GAMApp:~ >"
+        self.prompt = "GAMApp:~ > "
         self.authentication = GAAuthentication()
 
     def my_preloop(self):
@@ -90,14 +91,14 @@ class GACLIClient(cmd.Cmd):
             return
         return ga_search.show_results()
     
-    def do_addusertogroups(self, usr, grp=None):
+    def do_addtogroups(self, usr, grps=None):
         """
         Add usr to grp. If no grp provided, adds user to all available groups
-		addusertogroups(usr[,grps])
+                        addusertogroups(usr[,grps])
         """
-	ga_adding = GAUserMan(auth=self.authentication)
-	ga_adding.add(usr=usr,grps=grps)
-	return
+        ga_adding = GAUserMan(auth=self.authentication)
+        ga_adding.add(usr=usr, grps=grps)
+        return
     
     def do_deleteuserfromgroup(self, usr, grp=None):
         """
