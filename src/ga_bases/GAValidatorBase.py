@@ -8,9 +8,9 @@ class GAValidator(GABase):
                 self.what = what
                 self.based_on = based_on
                 if self.based_on == "URL":
-                        self.regex = "^([a-zA-Z0-9-_]+(?<!-|\.)\.)+[a-z]{2,6}$" # TODO  - URL Validation Regex
+                        self.regex = "^([a-zA-Z0-9-_]+(?<!-|\.)\.)+[a-z]{2,6}$"
                 elif self.based_on == "EMAIL":
-                        self.regex = "^([a-zA-Z0-9-]+((?<!-|\.)\.)?)+(?<!-|\.)@([a-zA-Z0-9-_]+(?<!-|\.)\.)+[a-z]{2,6}$" #TODO - EMAIL Validation Regex
+                        self.regex = "^([a-zA-Z0-9-]+((?<!-|\.)\.)?)+(?<!-|\.)@([a-zA-Z0-9-_]+(?<!-|\.)\.)+[a-z]{2,6}$"
         
         def validate(self):
                 is_valid = re.match(self.regex, self.what)
