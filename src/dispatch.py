@@ -48,12 +48,13 @@ class GACLIClient(cmd.Cmd):
             is_username_valid_email = GAValidator(what=username, based_on="EMAIL").validate() # Checking if the user entered his/her email, or only username
         except URLValidationError, ex:
             #TODO - Log the details
-            print "Domain Name not validated"
-	    return
+            print str(ex)
+            return
         except EmailValidationError, ex:
             #TODO - Log the Details
-	    is_username_valid_email = False
-            pass
+            is_username_valid_email = False
+            print str(ex)
+            print "username@domain_name concatenation will be used"
             
         self.authentication.domain_name = domain_name
         self.authentication.password = password
@@ -82,13 +83,13 @@ class GACLIClient(cmd.Cmd):
         @param group Group to search in. If alone, group will be searched for
                      and group info will be printed.
         """
-	try:
-	    is_username_valid_email = GAValidator(what=user, based_on="EMAIL").validate()
+        try:
+            is_username_valid_email = GAValidator(what=user, based_on="EMAIL").validate()
         except EmailValidationError, ex:
             #TODO - Log the Details
-	    print "Username not validated"           
-            return
-	
+            print str(ex)      
+        return
+    
         ga_search = GASearch(auth=self.authentication, user=user, group=group)
         try:
             ga_search.search()
@@ -105,11 +106,11 @@ class GACLIClient(cmd.Cmd):
         Add usr to grp. If no grp provided, adds user to all available groups
                         addusertogroups(usr[,grps])
         """
-	try:
+        try:
             is_username_valid_email = GAValidator(what=usr, based_on="EMAIL").validate()
         except EmailValidationError, ex:
             #TODO - Log the Details
-            print "Username not validated"
+            print str(ex)
             return
 
         ga_adding = GAUserMan(auth=self.authentication)
@@ -120,14 +121,12 @@ class GACLIClient(cmd.Cmd):
         """
         Deletes usr from grp. If no grp is provided, it'll search for usr in all groups, and delete from all of them. 
         """
-	try:
+        try:
             is_username_valid_email = GAValidator(what=usr, based_on="EMAIL").validate()
         except EmailValidationError, ex:
             #TODO - Log the Details
-            print "Username not validated"
+            print str(ex)
             return
-	
-        pass
     
     def do_addgroup(self, grpName):
         """
