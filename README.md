@@ -7,7 +7,7 @@ GAMApp
 <a href="https://github.com/ZeynepHavva"target="_black">Zeynep Havva Dinç</a><br />
 <a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
 Oğuzhan Ali Ünlü<br />
-Mehmet Akalın<br />
+<a href="https://github.com/akalinmehmet" target = "_blank" >Mehmet AKALIN</a><br />
 Ramazan Zor
 </p>
 
