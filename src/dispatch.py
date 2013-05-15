@@ -82,6 +82,13 @@ class GACLIClient(cmd.Cmd):
         @param group Group to search in. If alone, group will be searched for
                      and group info will be printed.
         """
+	try:
+	    is_username_valid_email = GAValidator(what=user, based_on="EMAIL").validate()
+        except EmailValidationError, ex:
+            #TODO - Log the Details
+	    print "Username not validated"           
+            return
+	
         ga_search = GASearch(auth=self.authentication, user=user, group=group)
         try:
             ga_search.search()
