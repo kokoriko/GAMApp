@@ -105,6 +105,13 @@ class GACLIClient(cmd.Cmd):
         Add usr to grp. If no grp provided, adds user to all available groups
                         addusertogroups(usr[,grps])
         """
+	try:
+            is_username_valid_email = GAValidator(what=usr, based_on="EMAIL").validate()
+        except EmailValidationError, ex:
+            #TODO - Log the Details
+            print "Username not validated"
+            return
+
         ga_adding = GAUserMan(auth=self.authentication)
         ga_adding.add(usr=usr, grps=grps)
         return
@@ -113,6 +120,13 @@ class GACLIClient(cmd.Cmd):
         """
         Deletes usr from grp. If no grp is provided, it'll search for usr in all groups, and delete from all of them. 
         """
+	try:
+            is_username_valid_email = GAValidator(what=usr, based_on="EMAIL").validate()
+        except EmailValidationError, ex:
+            #TODO - Log the Details
+            print "Username not validated"
+            return
+	
         pass
     
     def do_addgroup(self, grpName):
