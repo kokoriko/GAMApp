@@ -7,11 +7,6 @@ class GAUserMan(GABase):
         self.authentication = auth
 
     def add(self, usr, grps = None):
-        try:
-            is_username_valid_email = GAValidator(what = usr,based_on = "EMAIL").validate()
-        except EmailValidationError, ex:
-            print str(ex)
-
         gservice=self.authentication.gservice
 	listOfEmpties = ["",[],{},None]
 	if isinstance(grps,basestring):
