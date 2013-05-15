@@ -1,5 +1,4 @@
 from GABase import GABase
-from ga_bases.GAValidatorBase import GAValidator
 
 class GAUserMan(GABase):
     def __init__(self, auth=None):
