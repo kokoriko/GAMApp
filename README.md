@@ -6,7 +6,7 @@ GAMApp
 <a href="https://github.com/mustafaorkunacar" target="_blank" >Mustafa Orkun Acar<br />
 <a href="https://github.com/ZeynepHavva"target="_black">Zeynep Havva Dinç</a><br />
 <a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
-Oğuzhan Ali Ünlü<br />
+<a href="https://github.com/blacksimit" target = "_blank" >Oğuzhan Ünlü</a><br />
 <a href="https://github.com/akalinmehmet" target = "_blank" >Mehmet AKALIN</a><br />
 <a href="https://github.com/baskinburak" target = "_blank" >Baskın Burak Şenbaşlar</a><br />
 Ramazan Zor
