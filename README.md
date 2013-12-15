@@ -4,11 +4,12 @@ GAMApp
 <p>
 <b><i>Developers:</i></b> <br />
 <a href="https://github.com/mustafaorkunacar" target="_blank" >Mustafa Orkun Acar<br />
-<a href="https://github.com/ZeynepHavva"target="_black">Zeynep Havva Dinç</a><br />
+<a href="https://github.com/kokoriko"target="_black">Koray Taşbiçen</a><br />
 <a href="https://github.com/esrefozturk" target = "_blank" >Eşref Öztürk</a><br />
 <a href="https://github.com/blacksimit" target = "_blank" >Oğuzhan Ünlü</a><br />
 <a href="https://github.com/akalinmehmet" target = "_blank" >Mehmet AKALIN</a><br />
 <a href="https://github.com/baskinburak" target = "_blank" >Baskın Burak Şenbaşlar</a><br />
+<a href="https://github.com/kadircet" target = "_blank" >Kadir Çetinkaya</a><br />
 </p>
 
 ABOUT GAMApp
